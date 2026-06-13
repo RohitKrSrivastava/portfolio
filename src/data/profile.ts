@@ -8,7 +8,7 @@ export const profile = {
   experienceYears: "10+",
   connections: "500+",
   followers: "2,861",
-  about: `Experienced .NET Core and Spring Boot Java developer with over 10 years of expertise in designing and developing high-performance, scalable web applications. I specialize in algorithm development and full-stack architecture, with a strong focus on clean code, performance optimization, and intuitive, modern user interfaces.
+  about: `Experienced .NET Core and Java Spring Boot developer with over 10 years of expertise in designing and developing high-performance, scalable web applications. I specialize in algorithm development and full-stack architecture, with a strong focus on clean code, performance optimization, and intuitive, modern user interfaces.
 
 In recent years, I've taken on technical leadership and architectural roles, guiding teams through end-to-end solution design, code quality enforcement, and system scalability planning. I enjoy mentoring developers, driving best practices, and ensuring that technical decisions align with business goals.
 

@@ -13,6 +13,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { WhatIDeliver } from "@/components/WhatIDeliver";
 import { CoreDomains } from "@/components/CoreDomains";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
+import { CurrentlyExploring } from "@/components/CurrentlyExploring";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <Education />
         <Certifications />
         <Skills />
+        <CurrentlyExploring />
         <Languages />
         <Contact />
       </main>

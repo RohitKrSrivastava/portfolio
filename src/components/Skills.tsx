@@ -3,6 +3,7 @@ import { SectionHeader } from "./About";
 import { ScrollReveal } from "./ScrollReveal";
 
 const skillCategories = [
+  { label: "Architecture", key: "architecture" as const, color: "from-blue-500 to-cyan-500" },
   { label: "Backend", key: "backend" as const, color: "from-blue-500 to-cyan-500" },
   { label: "Frontend", key: "frontend" as const, color: "from-violet-500 to-purple-500" },
   { label: "Cloud & DevOps", key: "cloud" as const, color: "from-emerald-500 to-teal-500" },

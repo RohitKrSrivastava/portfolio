@@ -1,19 +1,21 @@
 export const profile = {
   name: "Rohit Kumar Srivastava",
   image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Active_Profile_Pic.jpg`,
-  title: "Engineering Lead (Full Stack)",
+  title: "Engineering Lead | Full Stack Architect | GenAI & Cloud Solutions",
   tagline:
-    "AI & Cloud | .NET Core, Java Spring Boot| Angular, React | MSBI | K2, Airflow, Workflow | AWS, Azure, GitLab | Kafka, RabbitMQ | GenAI LLM | E Trade Application, Fix Protocol | Red Hat & Microsoft Certified | Six Sigma Green Belt | Agile",
+    "10+ Years Building Enterprise Platforms Across Banking, Telecom & E-Trade | Engineering Leadership | AI & GenAI Solutions | .NET, Spring Boot, React, Angular | AWS, Azure | Event-Driven & Cloud-Native Architectures",
   location: "Singapore",
   company: "Atos",
   experienceYears: "10+",
   connections: "500+",
   followers: "2,861",
-  about: `Experienced .NET Core and Java Spring Boot developer with over 10 years of expertise in designing and developing high-performance, scalable web applications. I specialize in algorithm development and full-stack architecture, with a strong focus on clean code, performance optimization, and intuitive, modern user interfaces.
+  about: `Engineering Lead and Full Stack Solution Architect with 10+ years of experience delivering large-scale enterprise platforms across Banking, Financial Services, Telecommunications, Analytics, and Digital Transformation domains.
 
-In recent years, I've taken on technical leadership and architectural roles, guiding teams through end-to-end solution design, code quality enforcement, and system scalability planning. I enjoy mentoring developers, driving best practices, and ensuring that technical decisions align with business goals.
+          I specialize in designing cloud-native, event-driven, and AI-powered solutions using .NET Core, Java Spring Boot, Angular, React, AWS, Azure, Kafka, RabbitMQ, and modern DevOps practices. Throughout my career, I have successfully led cross-functional teams, architected mission-critical applications, modernized legacy platforms, and delivered high-impact business solutions for global organizations including Atos, Singtel, Crédit Agricole, Evalueserve, and Qualfon.
 
-I'm actively working in the LLM and Generative AI space, integrating advanced AI capabilities into applications to enable intelligent automation, natural language interfaces, and next-gen user experiences. Whether building from scratch or modernizing existing systems, I aim to create future-ready software solutions that combine robust architecture with smart, AI-driven capabilities.`,
+          My expertise spans E-Trade platforms, FIX Protocol integrations, CRM systems, workflow automation, enterprise integration, digital customer journeys, and Generative AI solutions. I have hands-on experience integrating Large Language Models (LLMs), OpenAI technologies, intelligent automation, and AI-driven analytics into enterprise ecosystems.
+
+          Beyond technology, I am passionate about engineering excellence, mentoring teams, driving agile delivery, and aligning technology strategy with business outcomes. I thrive in environments where innovation, scalability, and customer value are at the core of every solution.`,
   contact: {
     phone: "+65-80854791",
     phoneHref: "tel:+6580854791",
@@ -23,13 +25,24 @@ I'm actively working in the LLM and Generative AI space, integrating advanced AI
     linkedinHref:
       "https://www.linkedin.com/in/rohit-kumar-srivastava-59921352",
   },
+  // skills: {
+  //   backend: ["C#", "ASP.NET Core", "Java", "Spring Boot", ".NET Core"],
+  //   frontend: ["Angular", "React", "TypeScript"],
+  //   cloud: ["AWS", "Azure", "GitLab CI/CD", "Control-M", "CFT"],
+  //   data: ["MSBI", "MongoDB", "Kafka", "RabbitMQ"],
+  //   ai: ["OpenAI API", "LangChain", "Ollama", "LLaMA", "Mistral", "GenAI"],
+  //   workflow: ["K2", "Airflow", "UiPath RPA"],
+  //   other: ["E Trade Applicatoin", "Fix Protocol","Git", "SVN", "Agile", "Scrum", "Six Sigma"],
+  // },
   skills: {
-    backend: ["C#", "ASP.NET Core", "Java", "Spring Boot", ".NET Core"],
-    frontend: ["Angular", "React", "TypeScript"],
-    cloud: ["AWS", "Azure", "GitLab CI/CD", "Control-M", "CFT"],
-    data: ["MSBI", "MongoDB", "Kafka", "RabbitMQ"],
-    ai: ["OpenAI API", "LangChain", "Ollama", "LLaMA", "Mistral", "GenAI"],
-    workflow: ["K2", "Airflow", "UiPath RPA"],
+    architecture: ["Solution Architecture", "Microservices", "Cloud Native Architecture", "Event Driven Architecture", "Domain Driven Design", "System Design", "Enterprise Integration"],
+    backend: ["C#", ".NET Core", "ASP.NET Core", "Java", "Spring Boot", "REST APIs", "GraphQL"],
+    frontend: ["Angular", "React", "Next.js", "TypeScript", "JavaScript"],
+    cloud: [ "AWS", "Azure", "Docker", "Kubernetes", "GitLab CI/CD", "DevOps"],
+    messaging: [ "Kafka", "RabbitMQ", "FIX Protocol", "Event Streaming"],
+    data: ["SQL Server", "MongoDB", "MSBI", "Power BI"],
+    ai: ["Generative AI", "OpenAI", "LangChain", "Ollama", "LLaMA", "Mistral", "AI Agents", "RAG"],
+    workflow: ["K2", "Airflow", "UiPath", "Control-M"],
     other: ["E Trade Applicatoin", "Fix Protocol","Git", "SVN", "Agile", "Scrum", "Six Sigma"],
   },
   languages: [

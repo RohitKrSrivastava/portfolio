@@ -38,6 +38,14 @@ export function Experience() {
                 <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-400">
                   {job.description}
                 </p>
+                <ul className="mt-4 space-y-2">
+                  {job.achievements?.map((item, index) => (
+                    <li key={index} className="flex gap-2">
+                      <span className="text-cyan-400">✔</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
                 </div>
               </ScrollReveal>
             ))}

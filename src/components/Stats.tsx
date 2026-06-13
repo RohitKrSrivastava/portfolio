@@ -1,4 +1,5 @@
 import { profile } from "@/data/profile";
+//import { Timer, Building2, Briefcase, Users } from "lucide-react";
 import { AnimatedCounter } from "./BackToTop";
 import { ScrollReveal } from "./ScrollReveal";
 
@@ -6,8 +7,11 @@ const stats = [
   { value: 10, suffix: "+", label: "Years Experience", icon: "⏱" },
   { value: profile.experience.length, suffix: "", label: "Roles Led", icon: "🏢" },
   { value: profile.certifications.length, suffix: "+", label: "Certifications", icon: "🎓" },
-  { value: 2861, suffix: "", label: "LinkedIn Followers", icon: "👥" },
+  { value: 25, suffix: "+", label: "Projects Delivered", icon: "💼" },
+  { value: 10, suffix: "+", label: "Enterprise Clients", icon: "🏣" },
+  { value: 5, suffix: "+", label: "Countries Served", icon: "🌐" },
 ];
+
 
 export function Stats() {
   return (

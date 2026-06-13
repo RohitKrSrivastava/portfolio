@@ -25,15 +25,6 @@ export const profile = {
     linkedinHref:
       "https://www.linkedin.com/in/rohit-kumar-srivastava-59921352",
   },
-  // skills: {
-  //   backend: ["C#", "ASP.NET Core", "Java", "Spring Boot", ".NET Core"],
-  //   frontend: ["Angular", "React", "TypeScript"],
-  //   cloud: ["AWS", "Azure", "GitLab CI/CD", "Control-M", "CFT"],
-  //   data: ["MSBI", "MongoDB", "Kafka", "RabbitMQ"],
-  //   ai: ["OpenAI API", "LangChain", "Ollama", "LLaMA", "Mistral", "GenAI"],
-  //   workflow: ["K2", "Airflow", "UiPath RPA"],
-  //   other: ["E Trade Applicatoin", "Fix Protocol","Git", "SVN", "Agile", "Scrum", "Six Sigma"],
-  // },
   skills: {
     architecture: ["Solution Architecture", "Microservices", "Cloud Native Architecture", "Event Driven Architecture", "Domain Driven Design", "System Design", "Enterprise Integration"],
     backend: ["C#", ".NET Core", "ASP.NET Core", "Java", "Spring Boot", "REST APIs", "GraphQL"],
@@ -58,6 +49,14 @@ export const profile = {
       current: true,
       description:
         "Leading full-stack engineering initiatives at a global digital transformation leader with 105,000+ employees across 166 countries.",
+      achievements: [
+        "Build Inventory management CRM application",
+        "Integrated with Workflows",
+        "Developed high-performance APIs and Ui",
+        "Improved application performance and scalability",
+        "Create architecture of applicaiton",
+        "Leading Team of Engineering"
+      ]
     },
     {
       role: "Technical Team Lead",
@@ -66,7 +65,16 @@ export const profile = {
       location: "Singapore",
       description:
         "Led technical teams for Asia's leading communications group. Payroll of Persolkelly Singapore.",
-    },
+      achievements: [
+        "Telecom MCP application development",
+        "Order Mangement CRM and application development",
+        "Integrated with Workflows",
+        "Working with AI Agents",
+        "Developed high-performance APIs and Ui",
+        "Improved application performance and scalability",
+        "Leading Team of Engineering"
+        ]
+      },
     {
       role: "Lead Full Stack Developer",
       company: "PlateSmart Technologies",
@@ -74,6 +82,15 @@ export const profile = {
       location: "Hyderabad, India",
       description:
         "Developed ALPR business analytics and security solutions. Payroll of Shiv Software Experts.",
+      achievements: [
+        "Work on USA ALPR application",
+        "Integration with mq and live straming camera",
+        "Integrated with OCR",
+        "Working with AI Agents",
+        "Developed high-performance APIs and Ui",
+        "Improved application performance and scalability",
+        "Leading Team of Engineering"
+        ]
     },
     {
       role: "Senior Software Engineer (Full Stack)",
@@ -82,6 +99,12 @@ export const profile = {
       location: "Singapore",
       description:
         "Built banking solutions for one of France's largest financial institutions.",
+      achievements: [
+        "Built E-Trade Application and investment banking platforms",
+        "Integrated FIX Protocol connectivity",
+        "Developed high-performance APIs and Ui",
+        "Improved trading workflows and operational efficiency",
+      ]
     },
     {
       role: "Sr. Software Developer (Full Stack)",
@@ -90,6 +113,13 @@ export const profile = {
       location: "Gurugram, India",
       description:
         "Delivered data-driven insights and digital platform solutions for global clients.",
+      achievements: [
+        "Built Spread Smart Financial Solutions",
+        "Integrated with ai agents",
+        "Developed high-performance APIs and Ui",
+        "Improved financial spreading and operational efficiency",
+        "Implement Notes processing feature"
+      ]
     },
     {
       role: "Software Engineer",
@@ -98,6 +128,12 @@ export const profile = {
       location: "Remote / Global",
       description:
         "Developed CX solutions and enterprise applications across multiple countries.",
+      achievements: [
+        "Implement Financial Client Application",
+        "Integration with diffrent applications",
+        "Developed high-performance APIs and Ui",
+        "Developed Ui Path automation workflows"
+      ]
     },
     {
       role: "Software Engineer",
@@ -106,6 +142,12 @@ export const profile = {
       location: "Noida, India",
       description:
         "Full-stack development for IT services and consulting projects.",
+      achievements: [
+        "Implement CRM Application",
+        "Integration with diffrent applications",
+        "Developed high-performance APIs and Ui",
+        "Develope orgeder management application module"
+      ]
     },
   ],
   education: [

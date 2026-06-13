@@ -10,6 +10,9 @@ import { Education, Certifications } from "@/components/Education";
 import { Skills, Languages } from "@/components/Skills";
 import { Contact, Footer } from "@/components/Contact";
 import { BackToTop } from "@/components/BackToTop";
+import { WhatIDeliver } from "@/components/WhatIDeliver";
+import { CoreDomains } from "@/components/CoreDomains";
+import { FeaturedProjects } from "@/components/FeaturedProjects";
 
 export default function Home() {
   return (
@@ -18,9 +21,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <WhatIDeliver />
         <Stats />
+        <CoreDomains />
         <TechMarquee />
         <About />
+        <FeaturedProjects />
         <Expertise />
         <Experience />
         <Education />

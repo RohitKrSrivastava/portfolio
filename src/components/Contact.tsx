@@ -46,19 +46,19 @@ export function Contact() {
 export function Footer() {
   return (
     <footer className="border-t border-slate-800/60 px-6 py-8 text-center">
-      <p className="text-sm text-slate-500">
+      <p className="text-sm text-slate-600 dark:text-slate-400">
         © 2026 {profile.name}. All rights reserved.
       </p>
       <div className="mt-3 flex items-center justify-center gap-6">
         <a
           href={profile.contact.phoneHref}
-          className="text-xs text-slate-500 transition-colors hover:text-cyan-400"
+          className="text-xs text-slate-600 dark:text-slate-400 transition-colors hover:text-cyan-400"
         >
           {profile.contact.phone}
         </a>
         <a
           href={profile.contact.emailHref}
-          className="text-xs text-slate-500 transition-colors hover:text-cyan-400"
+          className="text-xs text-slate-600 dark:text-slate-400 transition-colors hover:text-cyan-400"
         >
           {profile.contact.email}
         </a>
@@ -66,7 +66,7 @@ export function Footer() {
           href={profile.contact.linkedinHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-slate-500 transition-colors hover:text-cyan-400"
+          className="text-xs text-slate-600 dark:text-slate-400 transition-colors hover:text-cyan-400"
         >
           LinkedIn
         </a>

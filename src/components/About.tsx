@@ -13,7 +13,7 @@ export function About() {
           {profile.about.split("\n\n").map((paragraph, i) => (
             <p
               key={i}
-              className={`leading-relaxed text-slate-300 ${i > 0 ? "mt-4" : ""}`}
+              className={`leading-relaxed text-slate-700 dark:text-slate-300 ${i > 0 ? "mt-4" : ""}`}
             >
               {paragraph}
             </p>

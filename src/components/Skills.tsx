@@ -57,7 +57,7 @@ export function Languages() {
             <ScrollReveal key={lang.name} delay={i * 100}>
               <div className="glass-card flex items-center justify-between p-6">
               <span className="text-lg font-semibold text-white">{lang.name}</span>
-              <span className="rounded-full bg-slate-800 px-4 py-1.5 text-sm text-slate-300">
+              <span className="rounded-full bg-slate-200 dark:bg-slate-800 px-4 py-1.5 text-sm text-slate-700 dark:text-slate-300">
                 {lang.level}
               </span>
               </div>

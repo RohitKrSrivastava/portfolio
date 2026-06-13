@@ -1,5 +1,6 @@
 export const profile = {
   name: "Rohit Kumar Srivastava",
+  image: "/Active_Profile_Pic.jpg",
   title: "Engineering Lead (Full Stack)",
   tagline:
     "AI & Cloud | .NET Core | Angular, React | MSBI | K2, Airflow, Workflow | AWS, Azure, GitLab | Kafka, RabbitMQ | GenAI LLM | Red Hat & Microsoft Certified | Six Sigma Green Belt | Agile",

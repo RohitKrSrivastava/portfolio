@@ -57,7 +57,7 @@ export function Expertise() {
                 <h3 className="mb-3 text-xl font-bold text-white">
                   {pillar.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-400">
+                <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                   {pillar.description}
                 </p>
                 <div className="expertise-card-glow" />

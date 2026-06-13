@@ -26,11 +26,11 @@ export function RotatingText() {
 
   return (
     <p className="rotating-text mb-6 max-w-2xl text-base md:text-lg">
-      <span className="text-slate-500">I build </span>
+      <span className="text-slate-600 dark:text-slate-400">I build </span>
       <span className={`rotating-text-highlight ${fade ? "opacity-100" : "opacity-0"}`}>
         {roles[index]}
       </span>
-      <span className="text-slate-500"> solutions</span>
+      <span className="text-slate-600 dark:text-slate-400"> solutions</span>
     </p>
   );
 }

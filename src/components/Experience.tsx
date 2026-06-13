@@ -34,8 +34,8 @@ export function Experience() {
                     )}
                   </div>
                 </div>
-                <p className="mb-2 text-sm text-slate-500">{job.location}</p>
-                <p className="text-sm leading-relaxed text-slate-400">
+                <p className="mb-2 text-sm text-slate-600 dark:text-slate-500">{job.location}</p>
+                <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-400">
                   {job.description}
                 </p>
                 </div>

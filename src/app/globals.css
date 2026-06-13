@@ -1,12 +1,41 @@
 @import "tailwindcss";
 
 :root {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --accent-cyan: #0ea5e9;
+  --accent-violet: #8b5cf6;
+  --text-primary: #0f172a;
+  --text-muted: #475569;
+  
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-hover-shadow: rgba(0, 0, 0, 0.1);
+  
+  --tag-bg: rgba(241, 245, 249, 0.8);
+  --tag-text: #475569;
+  --tag-border: rgba(0, 0, 0, 0.1);
+  
+  --grid-line: rgba(15, 23, 42, 0.05);
+}
+
+.dark {
   --bg-primary: #030712;
   --bg-secondary: #0f172a;
   --accent-cyan: #22d3ee;
   --accent-violet: #8b5cf6;
   --text-primary: #f8fafc;
   --text-muted: #94a3b8;
+
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(148, 163, 184, 0.1);
+  --glass-hover-shadow: rgba(0, 0, 0, 0.3);
+
+  --tag-bg: rgba(30, 41, 59, 0.8);
+  --tag-text: #cbd5e1;
+  --tag-border: rgba(148, 163, 184, 0.15);
+  
+  --grid-line: rgba(148, 163, 184, 0.03);
 }
 
 @theme inline {
@@ -34,7 +63,7 @@ body {
 
 .hero-glow {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 2rem;
   filter: blur(80px);
   pointer-events: none;
 }
@@ -60,8 +89,8 @@ body {
 .hero-grid {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent);
 }
@@ -74,7 +103,7 @@ body {
 /* Avatar */
 .avatar-ring {
   padding: 4px;
-  border-radius: 50%;
+  border-radius: 2rem;
   background: linear-gradient(135deg, #22d3ee, #8b5cf6, #22d3ee);
   background-size: 200% 200%;
   animation: gradient-shift 4s ease infinite;
@@ -94,7 +123,7 @@ body {
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #f8fafc 0%, #22d3ee 50%, #a78bfa 100%);
+  background: linear-gradient(135deg, var(--text-primary) 0%, #22d3ee 50%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,7 +134,7 @@ body {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 2rem;
   background: #34d399;
   box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5);
   animation: pulse 2s infinite;
@@ -183,21 +212,21 @@ body {
 }
 
 .bg-section-alt {
-  background: linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.5), transparent);
+  background: linear-gradient(180deg, transparent, var(--grid-line), transparent);
 }
 
 /* Glass card */
 .glass-card {
   border-radius: 1.25rem;
-  border: 1px solid rgba(148, 163, 184, 0.1);
-  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
   backdrop-filter: blur(12px);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
   border-color: rgba(34, 211, 238, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px var(--glass-hover-shadow);
 }
 
 /* Timeline */
@@ -238,9 +267,9 @@ body {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 500;
-  color: #cbd5e1;
-  background: rgba(30, 41, 59, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
   transition: all 0.2s ease;
 }
 
@@ -328,8 +357,8 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 1.25rem;
-  border: 1px solid rgba(148, 163, 184, 0.1);
-  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
   padding: 2rem 1.5rem;
   text-align: center;
   backdrop-filter: blur(12px);
@@ -339,7 +368,7 @@ body {
 .stat-card:hover {
   transform: translateY(-6px);
   border-color: rgba(34, 211, 238, 0.3);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(34, 211, 238, 0.08);
+  box-shadow: 0 16px 40px var(--glass-hover-shadow), 0 0 30px rgba(34, 211, 238, 0.08);
 }
 
 .stat-icon {
@@ -351,7 +380,7 @@ body {
 .stat-value {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #f8fafc, #22d3ee);
+  background: linear-gradient(135deg, var(--text-primary), #22d3ee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -361,7 +390,7 @@ body {
 .stat-label {
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  color: #94a3b8;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -387,8 +416,8 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 1.25rem;
-  border: 1px solid rgba(148, 163, 184, 0.1);
-  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
   backdrop-filter: blur(12px);
   transition: transform 0.35s ease, border-color 0.35s ease;
 }
@@ -441,9 +470,9 @@ body {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #94a3b8;
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
   white-space: nowrap;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
@@ -499,7 +528,7 @@ body {
 .float-badge-3 { top: 55%; left: 5%; animation: float-badge 9s ease-in-out infinite 1s; }
 .float-badge-4 { top: 65%; right: 15%; animation: float-badge 7.5s ease-in-out infinite 1.5s; }
 .float-badge-5 { top: 12%; right: 25%; animation: float-badge 8.5s ease-in-out infinite 0.8s; }
-.float-badge-6 { bottom: 20%; left: 20%; animation: float-badge 9.5s ease-in-out infinite 2s; }
+.float-badge-6 { bottom: 10%; left: 5%; animation: float-badge 9.5s ease-in-out infinite 2s; }
 
 @keyframes float-badge {
   0%, 100% { transform: translateY(0) rotate(0deg); }

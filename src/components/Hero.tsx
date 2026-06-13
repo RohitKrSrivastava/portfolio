@@ -6,6 +6,7 @@ import {
   Users,
   Award,
 } from "lucide-react";
+import Image from "next/image";
 import { LinkedInIcon } from "./LinkedInIcon";
 import { profile } from "@/data/profile";
 import { RotatingText } from "./RotatingText";
@@ -26,9 +27,21 @@ export function Hero() {
       <FloatingBadges />
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-16">
-        <div className="avatar-ring shrink-0">
-          <div className="avatar-inner flex h-40 w-40 items-center justify-center rounded-full text-5xl font-bold tracking-tight text-white md:h-48 md:w-48 md:text-6xl">
-            {initials}
+        <div className="avatar-ring shrink-0 lg:mt-14">
+          <div className="avatar-inner relative flex h-72 w-56 items-center justify-center overflow-hidden rounded-[1.75rem] md:h-80 md:w-64 lg:h-[24rem] lg:w-[18rem]">
+            {profile.image ? (
+              <Image
+                src={profile.image}
+                alt={profile.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <span className="text-5xl font-bold tracking-tight text-white md:text-6xl">
+                {initials}
+              </span>
+            )}
           </div>
         </div>
 
@@ -48,11 +61,11 @@ export function Hero() {
 
           <RotatingText />
 
-          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-slate-400 md:text-base">
+          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 md:text-base">
             {profile.tagline}
           </p>
 
-          <div className="mb-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400 lg:justify-start">
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-600 dark:text-slate-400 lg:justify-start">
             <span className="flex items-center gap-1.5">
               <MapPin className="h-4 w-4 text-cyan-400" />
               {profile.location}

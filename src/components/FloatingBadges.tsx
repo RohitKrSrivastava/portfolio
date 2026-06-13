@@ -5,6 +5,12 @@ const floatingTech = [
   { label: "GenAI", style: "float-badge-4" },
   { label: "Java", style: "float-badge-5" },
   { label: "Azure", style: "float-badge-6" },
+  { label: "Fix Protocol", style: "float-badge-7" },
+  { label: "E Trading", style: "float-badge-8" },
+  { label: "Kafka", style: "float-badge-9" },
+  { label: "Docker", style: "float-badge-10" },
+  { label: "Python", style: "float-badge-11" },
+  { label: "Cloud", style: "float-badge-12" },
 ];
 
 export function FloatingBadges() {

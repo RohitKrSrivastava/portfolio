@@ -1,29 +1,37 @@
 import { profile } from "@/data/profile";
-import { Brain, Cloud, Users } from "lucide-react";
+import { Brain, Cloud, TrendingUp, Users } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const pillars = [
   {
-    icon: Brain,
-    title: "AI & GenAI",
+    icon: TrendingUp,
+    title: "Trading & Capital Markets",
     description:
-      "Integrating LLMs, LangChain, and OpenAI into enterprise apps for intelligent automation and natural language experiences.",
+      "Engineering high-performance trading platforms with real-time market data, order management, portfolio analytics, risk controls, and scalable financial workflows.",
+    gradient: "from-emerald-500/20 to-green-500/20",
+    accent: "text-emerald-400",
+  },
+  {
+    icon: Brain,
+    title: "AI Engineering & GenAI",
+    description:
+      "Building intelligent applications using OpenAI, LangChain, MCP, RAG architectures, AI agents, and enterprise-grade LLM integrations for business automation.",
     gradient: "from-pink-500/20 to-rose-500/20",
     accent: "text-pink-400",
   },
   {
     icon: Cloud,
-    title: "Cloud & Architecture",
+    title: "Distributed Systems & Cloud",
     description:
-      "Designing scalable systems on AWS & Azure with event-driven patterns using Kafka, RabbitMQ, and modern CI/CD pipelines.",
+      "Designing resilient microservices, event-driven architectures, and cloud-native platforms on AWS & Azure with Kafka, RabbitMQ, Docker, and CI/CD automation.",
     gradient: "from-cyan-500/20 to-blue-500/20",
     accent: "text-cyan-400",
   },
   {
     icon: Users,
-    title: "Engineering Leadership",
+    title: "Technical Leadership",
     description:
-      "Leading full-stack teams, mentoring developers, enforcing code quality, and aligning technical decisions with business goals.",
+      "Driving architecture decisions, leading cross-functional teams, mentoring engineers, and delivering enterprise solutions from strategy to production.",
     gradient: "from-violet-500/20 to-purple-500/20",
     accent: "text-violet-400",
   },

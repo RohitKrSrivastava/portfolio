@@ -3,7 +3,7 @@ export const profile = {
   image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Active_Profile_Pic.jpg`,
   title: "Engineering Lead (Full Stack)",
   tagline:
-    "AI & Cloud | .NET Core | Angular, React | MSBI | K2, Airflow, Workflow | AWS, Azure, GitLab | Kafka, RabbitMQ | GenAI LLM | Red Hat & Microsoft Certified | Six Sigma Green Belt | Agile",
+    "AI & Cloud | .NET Core, Java Spring Boot| Angular, React | MSBI | K2, Airflow, Workflow | AWS, Azure, GitLab | Kafka, RabbitMQ | GenAI LLM | E Trade Application, Fix Protocol | Red Hat & Microsoft Certified | Six Sigma Green Belt | Agile",
   location: "Singapore",
   company: "Atos",
   experienceYears: "10+",
@@ -30,10 +30,10 @@ I'm actively working in the LLM and Generative AI space, integrating advanced AI
     data: ["MSBI", "MongoDB", "Kafka", "RabbitMQ"],
     ai: ["OpenAI API", "LangChain", "Ollama", "LLaMA", "Mistral", "GenAI"],
     workflow: ["K2", "Airflow", "UiPath RPA"],
-    other: ["Git", "SVN", "Agile", "Scrum", "Six Sigma"],
+    other: ["E Trade Applicatoin", "Fix Protocol","Git", "SVN", "Agile", "Scrum", "Six Sigma"],
   },
   languages: [
-    { name: "English", level: "Limited working proficiency" },
+    { name: "English", level: "Working proficiency" },
     { name: "Hindi", level: "Full professional proficiency" },
   ],
   experience: [
@@ -111,15 +111,15 @@ I'm actively working in the LLM and Generative AI space, integrating advanced AI
     },
   ],
   certifications: [
-    { name: "Professional Scrum Master", issuer: "Scrum Professionals", year: "2024" },
-    { name: "RPA Solution Architect", issuer: "UiPath", year: "2019" },
-    { name: "RPA Advanced Developer", issuer: "UiPath", year: "2019" },
-    { name: "RPA Developer Foundation", issuer: "UiPath", year: "2019" },
-    { name: "MongoDB Basics", issuer: "MongoDB", year: "2019" },
-    { name: "Agile Certified Professional", issuer: "Scrum Professionals", year: "2019" },
     { name: "Microsoft Certified Solutions Associate (MCSA)", issuer: "Microsoft" },
     { name: "Red Hat Certified Engineer (RHCE)", issuer: "Red Hat" },
     { name: "Red Hat Certified System Administrator (RHCSA)", issuer: "Red Hat" },
     { name: "Six Sigma Green Belt (CSSGB)", issuer: "Keizen Limited" },
+    { name: "Professional Scrum Master", issuer: "Scrum Professionals", year: "2024" },
+    { name: "Agile Certified Professional", issuer: "Scrum Professionals", year: "2019" },
+    { name: "MongoDB Basics", issuer: "MongoDB", year: "2019" },
+    { name: "RPA Solution Architect", issuer: "UiPath", year: "2019" },
+    { name: "RPA Advanced Developer", issuer: "UiPath", year: "2019" },
+    { name: "RPA Developer Foundation", issuer: "UiPath", year: "2019" },
   ],
 };
